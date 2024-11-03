@@ -9,7 +9,14 @@
 						<div class="row">
 							<div class="col-6 col-12-mobilep">
 							{{ if .Params.video }}
-							    <span class="video">{{ youtube $video_id }}</span>
+							    <span class="video">
+									<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+										<iframe src="https://www.youtube.com/embed/{{ $video_id }}"
+												style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+												allowfullscreen="" title="{{ .Params.title }}">
+											</iframe>
+									</div>
+								</span>
 							{{ else }}
 								{{ with .Params.images }}
 									<span class="image fit"><img src="{{ index . 0 | absURL }}" alt=""></span>
