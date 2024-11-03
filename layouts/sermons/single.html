@@ -8,11 +8,12 @@
 					<div class="box">
 						<div class="row">
 							<div class="col-6 col-12-mobilep">
-							{{ with .Params.images }}
-								<span class="image fit"><img src="{{ index . 0 | absURL }}" alt=""></span>
-							{{ end }}
-							{{ with .Params.video }}
-							    <span class="video">{{< youtube $video_id }}</span>
+							{{ if .Params.video }}
+							    <span class="video">{{ youtube $video_id }}</span>
+							{{ else }}
+								{{ with .Params.images }}
+									<span class="image fit"><img src="{{ index . 0 | absURL }}" alt=""></span>
+								{{ end }}
 							{{ end }}
 							</div>
 							<div class="col-6 col-12-mobilep">
