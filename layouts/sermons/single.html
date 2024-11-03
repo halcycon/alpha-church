@@ -11,6 +11,9 @@
 							{{ with .Params.images }}
 								<span class="image fit"><img src="{{ index . 0 | absURL }}" alt=""></span>
 							{{ end }}
+							{{ with .Params.video }}
+							    <span class="video">{{< youtube $video_id }}</span>
+							{{ end }}
 							</div>
 							<div class="col-6 col-12-mobilep">
 								{{ range .Params.audio }}
