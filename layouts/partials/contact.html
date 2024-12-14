@@ -92,7 +92,7 @@
 		<div class="row gtr-50 gtr-uniform">
 	
 			<!-- Title Field -->
-			<div class="col-6 col-12-mobilep">
+			<div class="col-2 col-12-mobilep">
 				<select 
 					name="mauticform[title]" 
 					id="mauticform_input_contactus_title" 
@@ -110,27 +110,25 @@
 			</div>
 	
 			<!-- First Name Field -->
-			<div class="col-6 col-12-mobilep">
+			<div class="col-5 col-12-mobilep">
 				<input 
 					type="text" 
 					name="mauticform[first_name]" 
 					id="mauticform_input_contactus_first_name" 
 					class="input-field" 
 					aria-label='{{ i18n "firstNameLabel" }}' 
-					placeholder='{{ i18n "firstNameLabel" }}' 
-					required>
+					placeholder='{{ i18n "firstNameLabel" }}'>
 			</div>
 	
 			<!-- Last Name Field -->
-			<div class="col-6 col-12-mobilep">
+			<div class="col-5 col-12-mobilep">
 				<input 
 					type="text" 
 					name="mauticform[last_name]" 
 					id="mauticform_input_contactus_last_name" 
 					class="input-field" 
 					aria-label='{{ i18n "lastNameLabel" }}' 
-					placeholder='{{ i18n "lastNameLabel" }}' 
-					required>
+					placeholder='{{ i18n "lastNameLabel" }}'>
 			</div>
 	
 			<!-- Phone Number Field (Optional) -->
@@ -146,7 +144,7 @@
 			</div>
 	
 			<!-- Email Address Field (Required for Response) -->
-			<div class="col-12">
+			<div class="col-6 col-12-mobilep">
 				<input 
 					type="email" 
 					name="mauticform[email_address]" 
@@ -177,8 +175,7 @@
 						<input 
 							type="submit" 
 							id="mauticform_input_contactus_submit" 
-							class="btn-submit"
-							name="Send">
+							class="btn-submit">
 							{{ i18n "sendLabel" }}							
 						</input>
 					</li>
