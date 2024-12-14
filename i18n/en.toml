@@ -1,14 +1,53 @@
-[nameLabel]
-other = "Your name"
+[titleLabel]
+other = "Title"
+
+[mrOption]
+other = "Mr"
+
+[mrsOption]
+other = "Mrs"
+
+[msOption]
+other = "Ms"
+
+[mxOption]
+other = "Mx"
+
+[drOption]
+other = "Dr"
+
+[revOption]
+other = "Rev"
+
+[otherOption]
+other = "Other"
+
+[firstNameLabel]
+other = "First Name"
+
+[lastNameLabel]
+other = "Last Name"
+
+[phoneLabel]
+other = "Phone Number"
+
+[phoneHelper]
+other = "Optional"
 
 [emailLabel]
-other = "Email address"
+other = "Email Address"
+
+[emailHelper]
+other = "Required if you would like a response from us."
 
 [messageLabel]
 other = "Enter your message"
 
 [sendLabel]
 other = "Send"
+
+[nameLabel]
+other = "Your name"
 
 [published]
 other = "Published:"
